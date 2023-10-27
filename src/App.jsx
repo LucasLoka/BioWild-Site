@@ -1,17 +1,23 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
-import Home from "./components/Home";
-import Chatbot from './components/Chatbot'
+import Home from "./components/Home/Home";
+import Chatbot from './components/Chatbot/Chatbot';
+
+function App() {
 
 
-const Routes = () => {
    return(
-       <BrowserRouter>
-           <Route component = { Home }  path="/" exact />
-           <Route component = { Chatbot }  path="/Chatbot" />
-       </BrowserRouter>
+        <Router>
+        <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/chatbot' element={<Chatbot/>}/>
+        </Routes>
+    </Router>
    )
+
 }
 
-export default Routes;
+
+export default App
+
