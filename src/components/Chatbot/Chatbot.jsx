@@ -1,8 +1,9 @@
 import React from "react";
 
-
-const Chatbot = () =>{
+function Chatbot(){
     return(
         <></>
     )
 }
+
+export default Chatbot
