@@ -1,6 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
+
+
+
+
     return(
         <div className="geral">
             <div className='cabeça'>
@@ -12,7 +18,7 @@ function Home() {
             <div className="bixo">
                 <h2>Denúncias Anônimas</h2>
                 <p>Para a proteção do nosso meio ambiente faca sua denúncia de forma anônima.</p>
-                <button onClick={() => {}}>Denuncie!!</button>
+               <Link to='/chatbot' > <button>Denuncie!!</button></Link>
             </div>
 
             <div className='oiiii'>
@@ -23,7 +29,21 @@ function Home() {
                     exercitationem, est sequi?</p>
             </div>
 
-            
+            <div class="card-container">
+                <div class="card">
+                    <h2>Card 1</h2>
+                    <p>Este é o primeiro card.</p>
+                </div>
+                <div class="card">
+                    <h2>Card 2</h2>
+                    <p>Este é o segundo card.</p>
+                </div>
+                <div class="card">
+                    <h2>Card 3</h2>
+                    <p>Este é o terceiro card.</p>
+                </div>
+            </div>
+
 
 
 
