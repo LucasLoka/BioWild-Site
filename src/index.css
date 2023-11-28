@@ -1,5 +1,6 @@
 :root {
  background-color: #D2B48C;
+ 
 }
 
 
@@ -18,12 +19,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #0c0c0c;
 }
 button:focus,
 button:focus-visible {
