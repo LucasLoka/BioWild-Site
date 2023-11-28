@@ -1,8 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from '../Carousel/Carousel';
 
 
 function Home() {
+
+    const images = [
+        'https://conteudo.imguol.com.br/c/entretenimento/a7/2020/06/04/mico-leao-dourado-1591308447765_v2_900x506.jpg.webp',
+        'url_da_imagem_2',
+        'url_da_imagem_3',
+        // Adicione mais URLs de imagem conforme necessário
+      ];
 
 
 
@@ -23,32 +31,22 @@ function Home() {
 
             <div className='oiiii'>
                 <h1>Quem somos?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quam possimus ducimus labore a, cum rerum sapiente eum. 
-                    Maiores dolor amet consequatur, totam sint saepe voluptatibus esse sapiente,
-                    exercitationem, est sequi?</p>
+                <p>Somos um projeto com o incentivo para a realização de denúncias contra maus tratos a animais silvestres e domésticos e denúncias contra a depredação do meio ambiente.</p>
             </div>
 
-            <div class="card-container">
-                <div class="card">
-                    <h2>Card 1</h2>
-                    <p>Este é o primeiro card.</p>
-                </div>
-                <div class="card">
-                    <h2>Card 2</h2>
-                    <p>Este é o segundo card.</p>
-                </div>
-                <div class="card">
-                    <h2>Card 3</h2>
-                    <p>Este é o terceiro card.</p>
-                </div>
+            
+            <div className='carousel'>
+            <Carousel images={images} />
             </div>
-
-
-
-
-
-
+            
+            
+            
+            
+            
+            
+            
+            
+         
 
         </div>
         
